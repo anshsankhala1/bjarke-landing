@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bjärke | A little more freedom, worn close</title>
+  <meta name="description" content="Bjärke is a pendant for the moments you move alone. Double press to alert someone you trust with your live location, without unlocking your phone. Reserve your place in Batch 1.">
+  <meta name="theme-color" content="#FCFAF5">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bjärke | A little more freedom, worn close">
+  <meta property="og:description" content="A pendant that alerts someone you trust with your live location in one double press. Reserve your place in Batch 1.">
+  <meta property="og:image" content="/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=EB+Garamond:ital,wght@0,400;1,400&family=Inter:wght@500&display=swap">
+  <link rel="preload" as="image" href="/images/silk.webp" fetchpriority="high">
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Turn on entrance animations only when motion is allowed (content stays visible without JS). -->
+  <script>
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('motion');
+  </script>
+
+  <!-- ===================== META PIXEL =====================
+       To activate: replace 'YOUR_PIXEL_ID' below with your Pixel ID from
+       Meta Events Manager (a number like '1234567890123456').
+       Nothing loads or tracks until the ID is replaced.
+       Fires PageView here. The confirmation page fires 'Lead'.
+       ====================================================== -->
+  <script>
+    const PIXEL_ID = 'YOUR_PIXEL_ID'; // <-- paste your Meta Pixel ID here
+    if (PIXEL_ID && PIXEL_ID !== 'YOUR_PIXEL_ID') {
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', PIXEL_ID);
+      fbq('track', 'PageView');
+    }
+  </script>
+  <!-- =================== END META PIXEL =================== -->
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="announce" role="note"><span class="label">A new way to feel at ease is coming</span></div>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a class="wordmark" href="#top" aria-label="Bjärke, back to top">BJÄRKE</a>
+      <nav class="nav__links" aria-label="Main">
+        <a class="label" href="#piece">The Pendant</a>
+        <a class="label" href="#how">How It Works</a>
+        <a class="label" href="#possibilities">Our Story</a>
+      </nav>
+      <a class="btn btn--outline btn--sm nav__cta" href="#reserve" data-scroll>Reserve Invite <span class="arrow" aria-hidden="true">↗</span></a>
+      <button class="nav__menu label" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu <span aria-hidden="true">☰</span></button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="#piece">The Pendant</a>
+      <a href="#how">How It Works</a>
+      <a href="#possibilities">Our Story</a>
+      <a class="btn btn--solid" href="#reserve" data-scroll>Reserve your launch invite <span class="arrow" aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__silk" aria-hidden="true"></div>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow eyebrow--plain" data-fade>Personal safety, beautifully reimagined</p>
+          <h1 class="hero__title">
+            <span class="line"><span>Wear the night.</span></span>
+            <span class="line"><span>Own your way home.</span></span>
+          </h1>
+          <p class="body hero__body" data-fade>Bjärke is a pendant made for moments you move alone. A double press can alert a trusted contact and share your live location, without unlocking your phone.</p>
+          <div class="hero__actions" data-fade>
+            <a class="btn btn--solid" href="#reserve" data-scroll>Reserve your launch invite <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="textlink" href="#piece">Explore the pendant <span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <figure class="hero__pendant" data-fade>
+          <div class="try">
+            <button class="pendant-btn" type="button" data-pendant-demo aria-label="Try the pendant demo: double-click to send an alert">
+              <span class="pendant" data-pendant data-size="hero"></span>
+            </button>
+            <div class="alert-card" role="status" aria-live="polite">
+              <span class="alert-card__dot" aria-hidden="true"></span>
+              <span>Alert sent to Priya · Live location shared.</span>
+            </div>
+          </div>
+          <figcaption class="caption" data-try-caption>Try it: double-click the pendant.</figcaption>
+        </figure>
+      </div>
+
+      <div class="wrap">
+        <ul class="features" data-fade>
+          <li class="label">Double-press alert</li>
+          <li class="label">Live location</li>
+          <li class="label">Automatic recording</li>
+          <li class="label">Designed to be worn</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 01 / THE PIECE -->
+    <section class="section piece" id="piece">
+      <div class="wrap piece__grid">
+        <div class="piece__copy">
+          <p class="eyebrow" data-reveal><span>01</span> / The piece</p>
+          <h2 class="h2" data-reveal>A little more freedom,<br class="br-d"> worn close.</h2>
+          <p class="body" data-reveal>The ease of a piece you love. The reassurance of knowing your people are one discreet gesture away.</p>
+          <a class="btn btn--outline" href="#reserve" data-scroll data-reveal>Discover Bjärke <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+        <div class="frame piece__frame">
+          <div class="media media--parallax" data-media>
+            <picture>
+              <source media="(max-width: 767px)" srcset="/images/pendant-closeup.webp" width="582" height="718">
+              <img src="/images/campaign.webp" width="1370" height="1148" loading="lazy" decoding="async" alt="A woman in a black blazer walks out of a lit restaurant at night, wearing the Bjärke pendant on a thin gold chain.">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 / CONSIDER THE POSSIBILITIES -->
+    <section class="section section--sand" id="possibilities">
+      <div class="wrap">
+        <p class="eyebrow" data-reveal><span>02</span> / Consider the possibilities</p>
+        <h2 class="h2" data-reveal>For the hours that are yours.</h2>
+        <p class="body" data-reveal>Made for the ride home, the walk to your door, and every plan in between.</p>
+
+        <ol class="cols3">
+          <li class="col">
+            <span class="rule" aria-hidden="true"></span>
+            <p class="num" data-reveal>01</p>
+            <h3 class="h3" data-reveal>Ask for help quietly</h3>
+            <p class="body body--sm" data-reveal>Double press to send an alert and your live location to someone you trust. No searching for an app when a moment feels off.</p>
+          </li>
+          <li class="col">
+            <span class="rule" aria-hidden="true"></span>
+            <p class="num" data-reveal>02</p>
+            <h3 class="h3" data-reveal>Keep evidence on your terms</h3>
+            <p class="body body--sm" data-reveal>When Bjärke senses something out of the ordinary, it captures a short clip, so you have the moment on record, not just a story to tell. A visible light shows whenever it’s recording.</p>
+          </li>
+          <li class="col">
+            <span class="rule" aria-hidden="true"></span>
+            <p class="num" data-reveal>03</p>
+            <h3 class="h3" data-reveal>Wear it your way</h3>
+            <p class="body body--sm" data-reveal>A considered pendant with swappable shells designed to feel like part of your outfit, every day.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 03 / HOW IT WORKS -->
+    <section class="section how" id="how">
+      <div class="wrap">
+        <p class="eyebrow" data-reveal><span>03</span> / How it works</p>
+        <h2 class="h2" data-reveal>Connection, in one considered gesture.</h2>
+
+        <div class="how__grid">
+          <ol class="steps">
+            <li class="step is-active" data-step="0">
+              <span class="rule" aria-hidden="true"></span>
+              <p class="num">01</p>
+              <div>
+                <h3 class="h3">Choose your circle</h3>
+                <p class="body body--sm">Pair the pendant and add the people you trust.</p>
+              </div>
+            </li>
+            <li class="step" data-step="1">
+              <span class="rule" aria-hidden="true"></span>
+              <p class="num">02</p>
+              <div>
+                <h3 class="h3">Double press</h3>
+                <p class="body body--sm">Activate an alert discreetly when you need to.</p>
+              </div>
+            </li>
+            <li class="step" data-step="2">
+              <span class="rule" aria-hidden="true"></span>
+              <p class="num">03</p>
+              <div>
+                <h3 class="h3">They know where you are</h3>
+                <p class="body body--sm">Your selected contact receives your live location.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="how__visual">
+            <div class="map" data-state="0" aria-label="Concept view of the Bjärke app. The phone screen changes with each step." role="img">
+              <svg class="map__bg" viewBox="0 0 830 660" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <rect width="830" height="660" fill="#E8E7DE"/>
+                <rect x="38" y="120" width="162" height="140" fill="#D9E0D3"/>
+                <rect x="370" y="40" width="190" height="130" fill="#D9E0D3"/>
+                <rect x="100" y="420" width="120" height="70" fill="#DFE3D8"/>
+                <g stroke="#FAF9F5" stroke-linecap="round" fill="none">
+                  <path d="M0 140 L820 25" stroke-width="16"/>
+                  <path d="M180 -10 L40 680" stroke-width="20"/>
+                  <path d="M0 375 L820 545" stroke-width="18"/>
+                  <path d="M560 -10 L720 680" stroke-width="14"/>
+                </g>
+                <text x="85" y="215" class="map__lbl">CAMPUS</text>
+                <text x="355" y="458" class="map__lbl">HOME</text>
+                <g fill="#5A7FB8"><circle cx="322" cy="305" r="3.5"/><circle cx="342" cy="292" r="3.5"/><circle cx="361" cy="278" r="3.5"/><circle cx="381" cy="264" r="3.5"/><circle cx="400" cy="250" r="3.5"/><circle cx="420" cy="236" r="3.5"/><circle cx="440" cy="222" r="3.5"/></g>
+                <circle cx="236" cy="341" r="78" fill="#5A7FB8" opacity=".14"/>
+                <circle cx="236" cy="341" r="22" fill="#fff"/>
+                <circle cx="236" cy="341" r="14" fill="#4A72B5"/>
+                <text x="236" y="397" text-anchor="middle" class="map__you">YOU • LIVE</text>
+              </svg>
+              <p class="map__tag">Location sharing • Concept view</p>
+
+              <div class="map__card">
+                <p class="mini mini--blue"><span class="dot dot--blue"></span>Live location</p>
+                <p class="map__card-title">Your people know where you are.</p>
+              </div>
+              <p class="map__note">Interface shown for concept only</p>
+
+              <div class="phone" aria-hidden="true">
+                <div class="phone__screen">
+                  <div class="phone__status"><span>9:41</span><span class="phone__island"></span><span>•••</span></div>
+                  <div class="phone__head">
+                    <p class="phone__brand">BJÄRKE</p>
+                    <p class="mini" data-head-text>Your circle</p>
+                  </div>
+
+                  <!-- state 0: contacts -->
+                  <div class="screen screen--0">
+                    <ul class="contacts">
+                      <li><span class="avatar">P</span><span>Priya</span><span class="tick">✓</span></li>
+                      <li><span class="avatar">M</span><span>Mom</span><span class="tick">✓</span></li>
+                      <li><span class="avatar">J</span><span>Jordan</span><span class="tick">✓</span></li>
+                    </ul>
+                    <p class="mini screen__foot">3 trusted contacts</p>
+                  </div>
+
+                  <!-- state 1: alert sent -->
+                  <div class="screen screen--1">
+                    <div class="alert-ring"><span></span><span></span><i></i></div>
+                    <p class="screen__title">Alert sent</p>
+                    <p class="screen__sub">To Priya, with your live location.</p>
+                  </div>
+
+                  <!-- state 2: location shared -->
+                  <div class="screen screen--2">
+                    <div class="phone__map">
+                      <span class="pulse-dot"></span>
+                    </div>
+                    <div class="sheet">
+                      <p class="mini">Your location</p>
+                      <p class="screen__title">Location shared</p>
+                      <p class="screen__sub">Your trusted contacts can see where you are.</p>
+                      <p class="mini mini--green"><span class="dot dot--green"></span>Live sharing</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 / IN YOUR ELEMENT -->
+    <section class="section section--dark element">
+      <div class="wrap">
+        <p class="eyebrow" data-reveal><span>04</span> / In your element</p>
+        <h2 class="h2" data-reveal>More room for the night.</h2>
+        <p class="body" data-reveal>A little reassurance, exactly where life happens.</p>
+
+        <ul class="moments">
+          <li class="moment">
+            <div class="media moment__media" data-media>
+              <img style="object-position: 50% 22%" src="/images/ride-home.webp" width="1202" height="1308" loading="lazy" decoding="async" alt="The woman looks out the window from the back seat of a car at night, the pendant at her neck.">
+            </div>
+            <p class="num num--light">01</p>
+            <h3 class="h3">The ride home</h3>
+          </li>
+          <li class="moment">
+            <div class="media moment__media" data-media>
+              <img src="/images/walk-back.webp" width="1400" height="1050" loading="lazy" decoding="async" alt="The woman walks down a lit city street at dusk wearing a red Bjärke pendant.">
+            </div>
+            <p class="num num--light">02</p>
+            <h3 class="h3">The walk back</h3>
+          </li>
+          <li class="moment">
+            <div class="media moment__media" data-media>
+              <img src="/images/first-hello.webp" width="1400" height="1050" loading="lazy" decoding="async" alt="The woman smiles across a candlelit restaurant table, wearing a red Bjärke pendant.">
+            </div>
+            <p class="num num--light">03</p>
+            <h3 class="h3">The first hello</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 05 + 06 -->
+    <section class="section pair">
+      <div class="wrap pair__grid">
+        <!-- 05 / MAKE IT YOURS -->
+        <article class="card card--sand" id="shells">
+          <p class="eyebrow" data-reveal><span>05</span> / Make it yours</p>
+          <h2 class="h2 h2--card" data-reveal>A different mood.<br>The same peace of mind.</h2>
+          <p class="body" data-reveal>Swappable shells let the pendant meet you where your style is, never the other way around.</p>
+
+          <div class="shell-picker" data-reveal>
+            <div class="swatches" role="radiogroup" aria-label="Preview a shell color">
+              <button type="button" class="swatch" role="radio" aria-checked="true" data-shell="Signal Red" style="--c:#7A2A2E"><span class="sr">Signal Red</span></button>
+              <button type="button" class="swatch" role="radio" aria-checked="false" data-shell="Sunlit Yellow" style="--c:#C8A84E"><span class="sr">Sunlit Yellow</span></button>
+              <button type="button" class="swatch" role="radio" aria-checked="false" data-shell="Blue" style="--c:#7E97B0"><span class="sr">Blue</span></button>
+              <button type="button" class="swatch" role="radio" aria-checked="false" data-shell="Lilac" style="--c:#9A88A8"><span class="sr">Lilac</span></button>
+              <button type="button" class="swatch" role="radio" aria-checked="false" data-shell="Teal" style="--c:#6E9C90"><span class="sr">Teal</span></button>
+            </div>
+            <span class="pendant pendant--mini" data-pendant data-size="mini" aria-hidden="true"></span>
+          </div>
+          <p class="label shell-name" aria-live="polite" data-shell-name>Signal Red</p>
+
+          <div class="media flatlay" data-media>
+            <img src="/images/shells-flatlay.webp" width="1400" height="788" loading="lazy" decoding="async" alt="Five oval shells in red, yellow, blue, lilac and teal arranged around the ivory pendant and its gold chain.">
+          </div>
+        </article>
+
+        <!-- 06 / PRIVACY, BY DESIGN -->
+        <article class="card card--outline">
+          <p class="eyebrow" data-reveal><span>06</span> / Privacy, by design</p>
+          <h2 class="h2 h2--card h2--lg" data-reveal>Your moment.<br>Your choice.</h2>
+          <p class="body" data-reveal>Bjärke records automatically when something seems wrong, or whenever you press it. A visible light shows when it’s on, and footage stays private until you decide to share it.</p>
+
+          <span class="rule" aria-hidden="true"></span>
+          <ul class="privacy-list">
+            <li class="label" data-reveal>Records automatically or on a press</li>
+            <li class="label" data-reveal><span class="rec-dot" aria-hidden="true"></span>Visible recording light</li>
+            <li class="label" data-reveal>Share only if you choose</li>
+          </ul>
+
+          <div class="rec-demo" aria-hidden="true">
+            <div class="rec-demo__scene"></div>
+            <span class="rec-demo__tag rec-demo__tag--calm">Walking home</span>
+            <span class="rec-demo__tag rec-demo__tag--alert">Something unusual detected</span>
+            <span class="rec-demo__light"><i></i><b>Recording</b></span>
+          </div>
+
+          <p class="fine">Product features are part of a prelaunch concept and subject to validation.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- BE FIRST IN LINE / RESERVATION -->
+    <section class="reserve" id="reserve">
+      <div class="reserve__silk" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="reserve__card">
+          <div class="reserve__grid">
+            <div class="reserve__main">
+              <p class="eyebrow eyebrow--center" data-reveal>Be first in line</p>
+              <h2 class="h2" data-reveal>A beautiful way to feel prepared.</h2>
+              <p class="body" data-reveal>Bjärke is coming soon. Reserve your place for the launch invitation, early access, and a first look at the collection.</p>
+
+              <form class="form" id="reserve-form" novalidate>
+                <!-- honeypot -->
+                <div class="hp" aria-hidden="true"><label>Leave empty <input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label class="label" for="f-name">Full name</label>
+                    <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+                    <p class="error" id="e-name"></p>
+                  </div>
+                  <div class="field">
+                    <label class="label" for="f-email">Email</label>
+                    <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="e-email">
+                    <p class="error" id="e-email"></p>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label" for="f-phone">Phone (optional), for a text when Batch 1 ships</label>
+                  <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="e-phone">
+                  <p class="error" id="e-phone"></p>
+                </div>
+
+                <fieldset class="field" aria-describedby="e-shell">
+                  <legend class="label">Choose your shell</legend>
+                  <div class="swatches swatches--form">
+                    <label class="swatch-opt"><input type="radio" name="shell" value="Signal Red" required><span class="swatch" style="--c:#7A2A2E"></span><span class="sr">Signal Red</span></label>
+                    <label class="swatch-opt"><input type="radio" name="shell" value="Sunlit Yellow"><span class="swatch" style="--c:#C8A84E"></span><span class="sr">Sunlit Yellow</span></label>
+                    <label class="swatch-opt"><input type="radio" name="shell" value="Blue"><span class="swatch" style="--c:#7E97B0"></span><span class="sr">Blue</span></label>
+                    <label class="swatch-opt"><input type="radio" name="shell" value="Lilac"><span class="swatch" style="--c:#9A88A8"></span><span class="sr">Lilac</span></label>
+                    <label class="swatch-opt"><input type="radio" name="shell" value="Teal"><span class="swatch" style="--c:#6E9C90"></span><span class="sr">Teal</span></label>
+                  </div>
+                  <p class="choice-name" data-form-shell-name aria-live="polite">No shell selected</p>
+                  <p class="error" id="e-shell"></p>
+                </fieldset>
+
+                <fieldset class="field" aria-describedby="e-home">
+                  <legend class="label">How do you usually get home after a night out?</legend>
+                  <div class="chips">
+                    <label class="chip"><input type="radio" name="getting_home" value="Rideshare alone" required><span>Rideshare alone</span></label>
+                    <label class="chip"><input type="radio" name="getting_home" value="Walk alone"><span>Walk alone</span></label>
+                    <label class="chip"><input type="radio" name="getting_home" value="Public transit"><span>Public transit</span></label>
+                    <label class="chip"><input type="radio" name="getting_home" value="Usually with friends"><span>Usually with friends</span></label>
+                  </div>
+                  <p class="error" id="e-home"></p>
+                </fieldset>
+
+                <fieldset class="field" aria-describedby="e-batch">
+                  <legend class="label">Which Batch 1 option are you planning for?</legend>
+                  <div class="options">
+                    <label class="option">
+                      <input type="radio" name="batch_option" value="Founder's Edition, Batch 1, $70" required>
+                      <span class="option__box">
+                        <span class="option__title">Founder’s Edition in Batch 1</span>
+                        <span class="option__meta">Pendant plus one shell</span>
+                        <span class="option__price">$70 <s>$125</s> <em>44% off</em></span>
+                      </span>
+                    </label>
+                    <label class="option">
+                      <input type="radio" name="batch_option" value="Standard release, $125">
+                      <span class="option__box">
+                        <span class="option__title">I’ll wait for the standard release</span>
+                        <span class="option__meta">Pendant plus one shell</span>
+                        <span class="option__price">$125</span>
+                      </span>
+                    </label>
+                  </div>
+                  <p class="error" id="e-batch"></p>
+                </fieldset>
+
+                <button class="btn btn--solid btn--block" type="submit" data-submit>
+                  <span data-submit-label>Reserve my place</span> <span class="arrow" aria-hidden="true">↗</span>
+                </button>
+                <p class="error form-error" role="alert" data-form-error></p>
+                <p class="fine fine--center">Reserving holds your place in Batch 1. No payment is taken today.</p>
+              </form>
+            </div>
+
+            <aside class="reserve__preview" aria-hidden="true">
+              <span class="pendant" data-pendant data-size="form"></span>
+              <p class="label" data-preview-name>Your shell</p>
+            </aside>
+          </div>
+
+          <div class="marquee" aria-label="A piece to wear · A person to reach · A moment to own">
+            <div class="marquee__track" aria-hidden="true">
+              <span>A piece to wear · A person to reach · A moment to own ·&nbsp;</span>
+              <span>A piece to wear · A person to reach · A moment to own ·&nbsp;</span>
+              <span>A piece to wear · A person to reach · A moment to own ·&nbsp;</span>
+              <span>A piece to wear · A person to reach · A moment to own ·&nbsp;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div>
+          <p class="wordmark wordmark--light">BJÄRKE</p>
+          <p class="footer__tag">A little more freedom, worn close.</p>
+        </div>
+        <nav class="footer__links" aria-label="Footer">
+          <a class="label" href="#piece">The Pendant</a>
+          <a class="label" href="#how">How It Works</a>
+          <a class="label" href="#reserve" data-scroll>Launch Invite</a>
+        </nav>
+      </div>
+      <p class="footer__fine">Concept landing page • product details and availability to be confirmed.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="/main.js" defer></script>
+</body>
+</html>

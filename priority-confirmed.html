@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Priority Confirmed | Bjärke</title>
+  <meta name="description" content="Your place in Bjärke Batch 1 is reserved.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#FCFAF5">
+  <meta property="og:title" content="Bjärke | A little more freedom, worn close">
+  <meta property="og:image" content="/images/og-image.jpg">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=EB+Garamond:ital,wght@0,400;1,400&family=Inter:wght@500&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- ===================== META PIXEL =====================
+       To activate: replace 'YOUR_PIXEL_ID' below with your Pixel ID
+       (same ID as on index.html). This page fires PageView and the
+       conversion event 'Lead' when a reservation is completed.
+       ====================================================== -->
+  <script>
+    const PIXEL_ID = 'YOUR_PIXEL_ID'; // <-- paste your Meta Pixel ID here
+    if (PIXEL_ID && PIXEL_ID !== 'YOUR_PIXEL_ID') {
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', PIXEL_ID);
+      fbq('track', 'PageView');
+      fbq('track', 'Lead'); // conversion event for the reservation (or use 'CompleteRegistration')
+    }
+  </script>
+  <!-- =================== END META PIXEL =================== -->
+</head>
+<body data-confirm>
+  <div class="announce" role="note"><span class="label">A new way to feel at ease is coming</span></div>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a class="wordmark" href="/" aria-label="Bjärke home">BJÄRKE</a>
+      <a class="btn btn--outline btn--sm nav__cta" href="/">Back to Bjärke <span class="arrow" aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="confirm">
+      <div class="reserve__silk" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="confirm__card">
+          <span class="pendant" data-pendant aria-hidden="true"></span>
+          <p class="eyebrow">Priority confirmed</p>
+          <h1 class="h2">Your place in Batch 1 is reserved.</h1>
+          <p class="body">Thank you. We’ll email you before Batch 1 ships with your launch invitation and next steps. No payment has been taken.</p>
+
+          <dl class="summary">
+            <div><dt>Shell</dt><dd data-c-shell>Your chosen shell</dd></div>
+            <div><dt>Option</dt><dd data-c-option>Your Batch 1 option</dd></div>
+          </dl>
+
+          <a class="btn btn--solid" href="/">Back to Bjärke <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div>
+          <p class="wordmark wordmark--light">BJÄRKE</p>
+          <p class="footer__tag">A little more freedom, worn close.</p>
+        </div>
+      </div>
+      <p class="footer__fine">Concept landing page • product details and availability to be confirmed.</p>
+    </div>
+  </footer>
+
+  <script src="/main.js" defer></script>
+</body>
+</html>
