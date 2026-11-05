@@ -4,7 +4,7 @@
 
 // Google Apps Script web app that appends each reservation to the
 // "Bjärke Reservations" Google Sheet.
-const APPS_SCRIPT_URL = '';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyboNL1cvxpFTJMJHG9c3QE-K99-q0Os-e5LPens4GAcMT4-VU8eQYCoOqGyY0939Oqdg/exec';
 
 const SHELLS = {
   'Signal Red': '#7A2A2E',
